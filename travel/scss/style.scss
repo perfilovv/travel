@@ -1,5 +1,6 @@
 @import '_normalize';
 @import '_header';
+@import '_main';
 
 body {
   font-family: 'Red Hat Text';
@@ -29,6 +30,4 @@ body {
   width: 1200px;
   margin: 0 auto;
   height: 100%;
-  align-items: center;
-  justify-content: center;
 }
