@@ -1,0 +1,64 @@
+.steps {
+  margin: 0 auto;
+}
+
+.steps-header {
+  font-size: 40px;
+  line-height: 53px;
+  color: #F2785C;
+  text-align: center;
+  margin: 80px 0px 0px 0px;
+}
+
+.steps-block {
+  display: flex;
+  margin: 40px 0px 0px 0px;
+  justify-content: center;
+  align-items: center;
+  width: 1177px;
+  height: 154px;
+}
+
+.step-one {
+  display: flex;
+  margin-right: 231px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.frame {
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  background: #F2785C;
+}
+
+.description {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0D606F;
+  margin-top: 30px;
+}
+
+.step-two {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 160px;
+}
+
+.step-three {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.steps-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
