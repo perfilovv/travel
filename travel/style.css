@@ -340,6 +340,7 @@ template {
 
 .nav-list {
   display: flex;
+  width: 527px;
   padding: 0px;
 }
 
@@ -348,13 +349,18 @@ template {
 }
 
 .login {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
   width: 103px;
   height: 41px;
   background: #0D606F;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   margin-left: 196px;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .wrapper {
@@ -542,6 +548,7 @@ input::placeholder {
   display: flex;
   justify-content: center;
   overflow-x: hidden;
+  height: 800px;
 }
 
 .destination-slider > *:not(:last-child) {
@@ -605,7 +612,13 @@ input::placeholder {
 }
 
 .stories {
-  margin-top: 80px;
+  background: url("../assets/images/bg-bot.jpg");
+  margin-top: 40px;
+}
+
+.background-white {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-top: 40px;
 }
 
 .stories-header {
@@ -615,7 +628,7 @@ input::placeholder {
   color: #F2785C;
   display: flex;
   justify-content: center;
-  margin: 0px 0px 80px 0px;
+  margin: 80px 0px 0px 0px;
 }
 
 .stories-container {
@@ -635,7 +648,6 @@ input::placeholder {
   font-size: 35px;
   line-height: 42px;
   color: #0D606F;
-  margin: 0 auto;
   margin-bottom: 24px;
 }
 
@@ -669,12 +681,45 @@ input::placeholder {
   margin-bottom: 41px;
 }
 
+.media-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  height: 61px;
+}
+
+.footer-container {
+  justify-content: end;
+  align-items: center;
+}
+
+.rights {
+  color: #FFFFFF;
+}
+
+.social-media {
+  height: 33.65px;
+  margin-left: 327px;
+}
+
+.social-media > *:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer-icon {
+  width: 33.65px;
+  height: 33.65px;
+}
+
 body {
   font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
+  width: 1440px;
 }
 body a,
 body a:visited {

@@ -30,6 +30,7 @@
 
 .nav-list {
   display: flex;
+  width: 527px;
   padding: 0px;
 }
 
@@ -38,13 +39,18 @@
 }
 
 .login {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
   width: 103px;
   height: 41px;
   background: #0D606F;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   margin-left: 196px;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .wrapper {
