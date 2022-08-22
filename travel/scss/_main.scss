@@ -1,5 +1,7 @@
-.main {
-  height: 675px;
+.wrapper-bg {
+  background: url('/assets/images/bg-top.jpg') no-repeat;
+  background-size: cover;
+  height: 765px;
 }
 
 .preview {
@@ -7,8 +9,6 @@
   height: 422px;
   margin-top: 32px;
 }
-
-.preview>*:not(:last-child) {}
 
 .explore {
   font-family: 'Aleo';

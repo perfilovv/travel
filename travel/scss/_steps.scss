@@ -1,4 +1,5 @@
 .steps-container {
+  flex-direction: column;
   height: 424px;
 }
 
@@ -19,8 +20,6 @@
   margin: 40px 0px 0px 0px;
   justify-content: center;
   align-items: center;
-  width: 1177px;
-  height: 154px;
 }
 
 .step-one {

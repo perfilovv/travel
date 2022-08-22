@@ -5,6 +5,7 @@
 
 .footer {
   height: 61px;
+  margin-top: -61px;
 }
 
 .footer-container {
@@ -12,15 +13,15 @@
   align-items: center;
 }
 
-.container {}
-
 .rights {
   color: #FFFFFF;
 }
 
 .social-media {
+  display: flex;
   height: 33.65px;
   margin-left: 327px;
+  padding: 0px;
 }
 
 .social-media>*:not(:last-child) {
