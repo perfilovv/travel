@@ -713,6 +713,10 @@ input::placeholder {
   height: 33.65px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Red Hat Text";
   font-style: normal;

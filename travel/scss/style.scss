@@ -6,6 +6,10 @@
 @import '_travel-stories';
 @import '_footer';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Red Hat Text';
   font-style: normal;
