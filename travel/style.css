@@ -736,6 +736,17 @@ body li {
 body button {
   border: none;
 }
+body img,
+body button,
+body li {
+  transition: transform 0.5s;
+}
+body li:hover,
+body button:hover,
+body img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
 .container {
   display: flex;
