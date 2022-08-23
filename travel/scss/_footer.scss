@@ -1,0 +1,34 @@
+.media-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  height: 61px;
+  margin-top: -61px;
+}
+
+.footer-container {
+  justify-content: end;
+  align-items: center;
+}
+
+.rights {
+  color: #FFFFFF;
+}
+
+.social-media {
+  display: flex;
+  height: 33.65px;
+  margin-left: 327px;
+  padding: 0px;
+}
+
+.social-media>*:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer-icon {
+  width: 33.65px;
+  height: 33.65px;
+}
