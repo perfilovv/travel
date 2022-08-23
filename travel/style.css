@@ -544,7 +544,6 @@ input::placeholder {
   display: flex;
   justify-content: center;
   overflow-x: hidden;
-  height: 800px;
 }
 
 .destination-slider > *:not(:last-child) {
@@ -554,7 +553,7 @@ input::placeholder {
 .switcher {
   display: flex;
   justify-content: center;
-  margin-top: 24px;
+  margin-top: 19px;
 }
 
 .switcher > *:not(:last-child) {
@@ -736,14 +735,12 @@ body li {
 body button {
   border: none;
 }
-body img,
 body button,
 body li {
   transition: transform 0.5s;
 }
 body li:hover,
-body button:hover,
-body img:hover {
+body button:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
