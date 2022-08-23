@@ -369,7 +369,7 @@ template {
 }
 
 .wrapper-bg {
-  background: url("/assets/images/bg-top.jpg") no-repeat;
+  background: url("./assets/images/bg-top.jpg") no-repeat;
   background-size: cover;
   height: 765px;
 }
@@ -608,7 +608,7 @@ input::placeholder {
 }
 
 .stories {
-  background: url("../assets/images/bg-bot.jpg") no-repeat;
+  background: url("./assets/images/bg-bot.jpg") no-repeat;
   background-size: cover;
   margin-top: 173px;
   padding-bottom: 61px;
