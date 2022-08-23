@@ -33,15 +33,13 @@ body {
     border: none;
   }
 
-  img,
   button,
   li {
     transition: transform 0.5s;
   }
 
   li:hover,
-  button:hover,
-  img:hover {
+  button:hover {
     transform: scale(1.1);
     cursor: pointer;
   }
