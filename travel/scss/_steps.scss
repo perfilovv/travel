@@ -65,3 +65,62 @@
   justify-content: center;
   height: 100px;
 }
+
+@media (max-width: 390px) {
+  .steps-header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 20px;
+  }
+
+  .steps-block {
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .frame {
+    width: 75px;
+    height: 75px;
+  }
+
+  .steps-icon {
+    height: 75px;
+  }
+
+  .step-one,
+  .step-two,
+  .step-three {
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .step-one {
+    align-items: flex-start;
+  }
+
+  .step-three {
+    align-items: flex-end;
+  }
+
+  .tell-us {
+    width: 94px;
+  }
+
+  .share-us {
+    width: 111px;
+  }
+
+  .we-will {
+    text-align: right;
+    width: 98px;
+  }
+
+  .description {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 20px;
+    height: 24px;
+  }
+
+}

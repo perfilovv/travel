@@ -454,6 +454,58 @@ input::placeholder {
   color: #FFF;
 }
 
+@media (max-width: 390px) {
+  .wrapper-bg {
+    background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%), url(./assets/images/bg-top.jpg);
+    background-size: cover;
+    height: 251px;
+  }
+  .header {
+    background: none;
+    box-shadow: none;
+    height: 32px;
+    padding-top: 43px;
+  }
+  .nav,
+.travel-portal,
+.explore,
+.recomendations {
+    display: none;
+  }
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+  .burger-line {
+    width: 26.25px;
+    height: 2.67px;
+    background: #FFFFFF;
+    border-radius: 5px;
+  }
+  .preview {
+    width: 100%;
+    height: 100%;
+  }
+  .search-block {
+    margin: 0 auto;
+    width: 360px;
+    height: 48px;
+  }
+  .input {
+    margin: 0 auto;
+    width: 221px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .start-planning {
+    margin-right: 9px;
+    font-size: 11px;
+    line-height: 15px;
+    width: 92px;
+    height: 30px;
+  }
+}
 .steps-container {
   flex-direction: column;
   height: 424px;
@@ -522,6 +574,53 @@ input::placeholder {
   height: 100px;
 }
 
+@media (max-width: 390px) {
+  .steps-header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 20px;
+  }
+  .steps-block {
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .frame {
+    width: 75px;
+    height: 75px;
+  }
+  .steps-icon {
+    height: 75px;
+  }
+  .step-one,
+.step-two,
+.step-three {
+    justify-content: center;
+    margin: 0px;
+  }
+  .step-one {
+    align-items: flex-start;
+  }
+  .step-three {
+    align-items: flex-end;
+  }
+  .tell-us {
+    width: 94px;
+  }
+  .share-us {
+    width: 111px;
+  }
+  .we-will {
+    text-align: right;
+    width: 98px;
+  }
+  .description {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 20px;
+    height: 24px;
+  }
+}
 .destination-container {
   flex-direction: column;
   align-items: center;
@@ -606,6 +705,75 @@ input::placeholder {
   margin-right: 10px;
 }
 
+@media (max-width: 390px) {
+  .destinations {
+    position: relative;
+    margin-top: 20px;
+  }
+  .destination-header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  .destination-slider {
+    justify-content: flex-start;
+  }
+  .country {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 8px 0px 0px 15px;
+  }
+  .destination {
+    margin: 0px 15px 0px 15px;
+  }
+  .destination-pic {
+    width: 360px;
+    height: 210px;
+  }
+  .switcher {
+    margin-top: -22px;
+  }
+  .switcher > *:not(:last-child) {
+    margin-right: 6px;
+  }
+  .ellipse {
+    width: 8px;
+    height: 8px;
+  }
+  .left {
+    background: #F2785C;
+  }
+  .middle {
+    background: rgba(242, 120, 92, 0.5);
+  }
+  .button-find {
+    font-size: 11px;
+    line-height: 15px;
+    width: 92px;
+    height: 30px;
+    margin-top: 22px;
+  }
+  .vector-find {
+    width: 10px;
+    height: 10px;
+  }
+  .arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    -moz-column-gap: 290px;
+         column-gap: 290px;
+    margin: 90px 0px 0px 20px;
+  }
+  .arrow-left {
+    display: flex;
+    transform: rotate(180deg);
+  }
+}
 .stories {
   background: url("./assets/images/bg-bot.jpg") no-repeat;
   background-size: cover;
@@ -750,4 +918,10 @@ body button:hover {
   width: 1200px;
   margin: 0 auto;
   height: 100%;
+}
+
+@media (max-width: 390px) {
+  .container {
+    width: 360px;
+  }
 }

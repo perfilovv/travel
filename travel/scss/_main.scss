@@ -75,3 +75,64 @@ input::placeholder {
   line-height: 32px;
   color: #FFF;
 }
+
+@media (max-width: 390px) {
+  .wrapper-bg {
+    background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%), url(./assets/images/bg-top.jpg);
+    background-size: cover;
+    height: 251px;
+  }
+
+  .header {
+    background: none;
+    box-shadow: none;
+    height: 32px;
+    padding-top: 43px;
+  }
+
+  .nav,
+  .travel-portal,
+  .explore,
+  .recomendations {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+
+  .burger-line {
+    width: 26.25px;
+    height: 2.67px;
+    background: #FFFFFF;
+    border-radius: 5px;
+  }
+
+  .preview {
+    width: 100%;
+    height: 100%;
+  }
+
+  .search-block {
+    margin: 0 auto;
+    width: 360px;
+    height: 48px;
+  }
+
+  .input {
+    margin: 0 auto;
+    width: 221px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .start-planning {
+    margin-right: 9px;
+    font-size: 11px;
+    line-height: 15px;
+    width: 92px;
+    height: 30px;
+  }
+}

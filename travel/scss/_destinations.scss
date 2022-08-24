@@ -81,3 +81,86 @@
 .vector-find {
   margin-right: 10px;
 }
+
+@media (max-width: 390px) {
+  .destinations {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .destination-header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+  .destination-slider {
+    justify-content: flex-start;
+  }
+
+  .country {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 8px 0px 0px 15px;
+  }
+
+  .destination {
+    margin: 0px 15px 0px 15px;
+  }
+
+  .destination-pic {
+    width: 360px;
+    height: 210px;
+  }
+
+  .switcher {
+    margin-top: -22px;
+  }
+
+  .switcher>*:not(:last-child) {
+    margin-right: 6px;
+  }
+
+  .ellipse {
+    width: 8px;
+    height: 8px;
+  }
+
+  .left {
+    background: #F2785C;
+  }
+
+  .middle {
+    background: rgba(242, 120, 92, 0.5);
+  }
+
+  .button-find {
+    font-size: 11px;
+    line-height: 15px;
+    width: 92px;
+    height: 30px;
+    margin-top: 22px;
+  }
+
+  .vector-find {
+    width: 10px;
+    height: 10px;
+  }
+
+  .arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    column-gap: 290px;
+    margin: 90px 0px 0px 20px;
+  }
+
+  .arrow-left {
+    display: flex;
+    transform: rotate(180deg);
+  }
+}
