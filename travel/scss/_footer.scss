@@ -32,3 +32,22 @@
   width: 33.65px;
   height: 33.65px;
 }
+
+@media (max-width: 390px) {
+  .footer {
+    height: 65px;
+    margin-top: -65px;
+  }
+
+  .footer-container {
+    justify-content: center;
+  }
+
+  .rights {
+    display: none;
+  }
+
+  .social-media {
+    margin: 0 auto;
+  }
+}

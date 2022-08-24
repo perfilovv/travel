@@ -774,6 +774,10 @@ input::placeholder {
     transform: rotate(180deg);
   }
 }
+.arrows {
+  display: none;
+}
+
 .stories {
   background: url("./assets/images/bg-bot.jpg") no-repeat;
   background-size: cover;
@@ -812,7 +816,7 @@ input::placeholder {
   font-size: 35px;
   line-height: 42px;
   color: #0D606F;
-  margin-bottom: 24px;
+  margin: 0px 0px 24px 0px;
 }
 
 .stories-text {
@@ -828,7 +832,11 @@ input::placeholder {
 }
 
 .read-more {
+  font-family: "Aleo";
+  font-style: normal;
   font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #0D606F;
@@ -845,6 +853,64 @@ input::placeholder {
   margin-bottom: 41px;
 }
 
+.stories-text-mobile {
+  display: none;
+}
+
+@media (max-width: 390px) {
+  .stories {
+    padding-bottom: 65px;
+    margin-top: 49px;
+  }
+  .background-white {
+    height: 628px;
+  }
+  .stories-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .stories-header {
+    font-size: 14px;
+    line-height: 19px;
+    margin: -29px 0px 20px 0px;
+  }
+  .stories-tit {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    margin-bottom: 10px;
+  }
+  .stories-text {
+    display: none;
+  }
+  .stories-text-mobile {
+    font-family: "Aleo";
+    font-style: normal;
+    color: #0D606F;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    font-size: 9px;
+    line-height: 11px;
+    margin: 0px;
+  }
+  .read-more {
+    font-size: 9px;
+    line-height: 11px;
+  }
+  .stories-img {
+    height: 130px;
+    width: 155px;
+    margin: 0px 10px 15px 0px;
+  }
+  .last-stories-img {
+    margin-bottom: 0px;
+  }
+  .button-more {
+    margin-bottom: 0px;
+  }
+}
 .media-wrapper {
   display: flex;
   align-items: center;
@@ -880,6 +946,21 @@ input::placeholder {
   height: 33.65px;
 }
 
+@media (max-width: 390px) {
+  .footer {
+    height: 65px;
+    margin-top: -65px;
+  }
+  .footer-container {
+    justify-content: center;
+  }
+  .rights {
+    display: none;
+  }
+  .social-media {
+    margin: 0 auto;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
