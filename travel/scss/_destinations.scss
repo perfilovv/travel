@@ -82,10 +82,15 @@
   margin-right: 10px;
 }
 
+.arrows {
+  display: none;
+}
+
 @media (max-width: 390px) {
   .destinations {
     position: relative;
     margin-top: 20px;
+    overflow-x: hidden;
   }
 
   .destination-header {
@@ -163,8 +168,4 @@
     display: flex;
     transform: rotate(180deg);
   }
-}
-
-.arrows {
-  display: none;
 }

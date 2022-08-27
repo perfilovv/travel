@@ -20,6 +20,7 @@
 </head>
 
 <body>
+  <div class="menu-shadow"></div>
   <div class="wrapper-bg">
     <header class="header">
       <div class="header-container container">
@@ -29,15 +30,23 @@
         </div>
         <nav class="nav">
           <ul class="nav-list">
-            <li><a href="#steps">How It Works</a></li>
-            <li><a href="#main">Plan Your Trip</a></li>
-            <li><a href="#destinations">Destinations</a></li>
-            <li><a href="#stories-header">Travel Stories</a></li>
+            <li><a href="#steps" class="nav-link">How It Works</a></li>
+            <li><a href="#main" class="nav-link">Plan Your Trip</a></li>
+            <li><a href="#destinations" class="nav-link">Destinations</a></li>
+            <li><a href="#stories-header" class="nav-link">Travel Stories</a></li>
+            <li class="nav-mobile"><a href="#" class="nav-link">Account</a></li>
+            <li class="nav-mobile"><a href="#footer" class="nav-link">Social Media</a></li>
           </ul>
           <button class="login">Login</button>
+          <div class="nav-close">
+            <span class="nav-close-line"></span>
+            <span class="nav-close-line"></span>
+          </div>
         </nav>
-        <div class="burger-menu">
-          <span class="burger-line"></span>
+        <div class="burger-menu burger">
+          <span class="burger-line burger-line-first"></span>
+          <span class="burger-line burger-line-second"></span>
+          <span class="burger-line burger-line-third"></span>
         </div>
       </div>
     </header>
@@ -214,7 +223,7 @@
       </div>
     </div>
   </section>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="footer-container container">
       <div class="media-wrapper">
         <span class="rights">All Rights Reserved © Travel Portal</span>
