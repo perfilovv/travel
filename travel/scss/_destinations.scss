@@ -7,6 +7,30 @@
   margin-top: 97px;
 }
 
+.destination {
+  height: 800px;
+  width: 800px;
+  border-radius: 16px;
+}
+
+.destination-one {
+  background: url(./assets/images/Destination-1.jpg);
+}
+
+.destination-two {
+  background: url(./assets/images/Destination-2.jpg);
+}
+
+.destination-three {
+  background: url(./assets/images/Destination-3.jpg);
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
 .destination-header {
   font-size: 40px;
   line-height: 53px;
@@ -19,11 +43,9 @@
 .destination-slider {
   display: flex;
   justify-content: center;
-  overflow-x: hidden;
-}
-
-.destination-slider>*:not(:last-child) {
-  margin-right: 60px;
+  margin: 0 auto;
+  gap: 60px;
+  position: relative;
 }
 
 .switcher {
@@ -66,10 +88,6 @@
   height: 59px;
 }
 
-.destination-pic {
-  border-radius: 16px;
-}
-
 .country {
   font-size: 32px;
   line-height: 42px;
@@ -79,7 +97,7 @@
 }
 
 .vector-find {
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 .arrows {
@@ -101,10 +119,6 @@
     margin-bottom: 20px;
   }
 
-  .destination-slider {
-    justify-content: flex-start;
-  }
-
   .country {
     font-size: 20px;
     line-height: 26px;
@@ -112,16 +126,38 @@
   }
 
   .destination {
+    max-width: 360px;
+    height: 210px;
     margin: 0px 15px 0px 15px;
   }
 
   .destination-pic {
-    width: 360px;
+    max-width: 360px;
     height: 210px;
   }
 
+  .slider-wrapper {
+    justify-content: flex-start;
+  }
+
+  .destination-slider {
+    position: static;
+  }
+
+  .destination-one {
+    background: url(/assets/images/Destination-1-mobile.jpg) no-repeat;
+  }
+
+  .destination-two {
+    background: url(/assets/images/Destination-2-mobile.jpg) no-repeat;
+  }
+
+  .destination-tree {
+    background: url(/assets/images/Destination-3-mobile.jpg) no-repeat;
+  }
+
   .switcher {
-    margin-top: -22px;
+    margin-top: -20px;
   }
 
   .switcher>*:not(:last-child) {
@@ -144,13 +180,13 @@
   .button-find {
     font-size: 11px;
     line-height: 15px;
-    width: 92px;
+    max-width: 92px;
     height: 30px;
     margin-top: 22px;
   }
 
   .vector-find {
-    width: 10px;
+    max-width: 10px;
     height: 10px;
   }
 
@@ -164,8 +200,16 @@
     margin: 90px 0px 0px 20px;
   }
 
+  .arrow {
+    max-width: 30px;
+    height: 30px;
+  }
+
+  .arrow-right {
+    background: url('/assets/icons/ep_arrow-up-bold.svg')
+  }
+
   .arrow-left {
-    display: flex;
-    transform: rotate(180deg);
+    background: url('/assets/icons/ep_arrow-up-bold-left.svg')
   }
 }

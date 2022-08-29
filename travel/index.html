@@ -37,12 +37,12 @@
             <li class="nav-mobile"><a href="#" class="nav-link">Account</a></li>
             <li class="nav-mobile"><a href="#footer" class="nav-link">Social Media</a></li>
           </ul>
-          <button class="login">Login</button>
           <div class="nav-close">
             <span class="nav-close-line"></span>
             <span class="nav-close-line"></span>
           </div>
         </nav>
+        <button class="login">Login</button>
         <div class="burger-menu burger">
           <span class="burger-line burger-line-first"></span>
           <span class="burger-line burger-line-second"></span>
@@ -53,7 +53,7 @@
     <main class="main" id="main">
       <div class="preview-container container">
         <section class="preview">
-          <h1 class="explore">Explore the beauty of the World</h1>
+          <h1 class="explore">Explore the beauty of <br> the World</h1>
           <p class="recomendations">Receive personalized recommendations for countries, hotels, activities and more</p>
           <div class="search-block">
             <input type="text" placeholder="What would you like to do?" class="input">
@@ -70,15 +70,15 @@
         <div class="step-one">
           <div class="frame">
             <div class="steps-icon">
-              <img src="./assets/icons/Bicycle.svg" alt="bicycle">
+              <img src="./assets/icons/Bicycle.svg" alt="bicycle" class="steps-icon-size">
             </div>
           </div>
           <span class="description tell-us">Tell us what you want to do</span>
         </div>
         <div class="step-two">
-          <div class="frame">
+          <div class="frame frame-center">
             <div class="steps-icon">
-              <img src="./assets/icons/Calendar.svg" alt="calendar">
+              <img src="./assets/icons/Calendar.svg" alt="calendar" class="steps-icon-size">
             </div>
           </div>
           <span class="description share-us">Share us preferable dates </span>
@@ -86,7 +86,7 @@
         <div class="step-three">
           <div class="frame">
             <div class="steps-icon">
-              <img src="./assets/icons/Airplane.svg" alt="airplane">
+              <img src="./assets/icons/Airplane.svg" alt="airplane" class="steps-icon-size-airplane">
             </div>
           </div>
           <span class="description we-will">We will give you recommendations</span>
@@ -97,21 +97,20 @@
   <section class="destinations" id="destinations">
     <h2 class="destination-header">POPULAR DESTINATIONS</h2>
     <div class="arrows">
-      <img src="./assets/icons/ep_arrow-up-bold.svg" alt="" class="arrow-left">
-      <img src="./assets/icons/ep_arrow-up-bold.svg" alt="" class="arrow-right">
+      <div class="arrow-left arrow"></div>
+      <div class="arrow-right arrow"></div>
     </div>
-    <div class="destination-slider">
-      <div class="destination-one destination">
-        <span class="country">SPAIN</span>
-        <img src="./assets/images/Destination-1.jpg" alt="destination-1" class="destination-pic">
-      </div>
-      <div class="destination-two destination">
-        <span class="country">JAPAN</span>
-        <img src="./assets/images/Destination-2.jpg" alt="destination-2" class="destination-pic">
-      </div>
-      <div class="destination-three destination">
-        <span class="country">USA</span>
-        <img src="./assets/images/Destination-3.jpg" alt="destination-3" class="destination-pic">
+    <div class="slider-wrapper">
+      <div class="destination-slider">
+        <div class="destination-one destination">
+          <span class="country">SPAIN</span>
+        </div>
+        <div class="destination-two destination">
+          <span class="country">JAPAN</span>
+        </div>
+        <div class="destination-three destination">
+          <span class="country">USA</span>
+        </div>
       </div>
     </div>
     <div class="switcher">

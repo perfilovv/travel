@@ -80,12 +80,25 @@
   }
 
   .frame {
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .frame-center {
+    margin-left: 4px;
   }
 
   .steps-icon {
-    height: 75px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .steps-icon-size {
+    width: 35px;
+  }
+
+  .steps-icon-size-airplane {
+    width: 40px;
   }
 
   .step-one,
@@ -104,16 +117,17 @@
   }
 
   .tell-us {
-    width: 94px;
+    max-width: 94px;
   }
 
   .share-us {
-    width: 111px;
+    max-width: 111px;
+    margin-left: 4px;
   }
 
   .we-will {
     text-align: right;
-    width: 98px;
+    max-width: 98px;
   }
 
   .description {
@@ -122,5 +136,4 @@
     margin-top: 20px;
     height: 24px;
   }
-
 }
