@@ -8,21 +8,25 @@
 }
 
 .destination {
-  height: 800px;
-  width: 800px;
+  height: 55.56vw;
+  width: 55.56vw;
   border-radius: 16px;
+
 }
 
 .destination-one {
-  background: url(./assets/images/Destination-1.jpg);
+  background: url(./assets/images/Destination-1.jpg) no-repeat;
+  background-size: auto 55.56vw;
 }
 
 .destination-two {
-  background: url(./assets/images/Destination-2.jpg);
+  background: url(./assets/images/Destination-2.jpg) no-repeat;
+  background-size: auto 55.56vw;
 }
 
 .destination-three {
-  background: url(./assets/images/Destination-3.jpg);
+  background: url(./assets/images/Destination-3.jpg) no-repeat;
+  background-size: auto 55.56vw;
 }
 
 .slider-wrapper {
@@ -36,6 +40,7 @@
   line-height: 53px;
   display: flex;
   justify-content: center;
+  text-align: center;
   color: #F2785C;
   margin-bottom: 46px;
 }
@@ -93,7 +98,8 @@
   line-height: 42px;
   color: #FFFFFF;
   position: absolute;
-  margin: 718px 0px 0px 15px;
+  bottom: 40px;
+  margin-left: 15px;
 }
 
 .vector-find {

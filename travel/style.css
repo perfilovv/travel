@@ -341,7 +341,7 @@ template {
 .nav-list {
   display: flex;
   max-width: 527px;
-  padding: 0px;
+  padding: 0px 5px 0px 5px;
   gap: 42px;
 }
 
@@ -362,6 +362,7 @@ template {
 .header-container {
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .nav-mobile,
@@ -369,6 +370,24 @@ template {
   display: none;
 }
 
+@media (max-width: 873px) {
+  .nav {
+    order: 3;
+  }
+}
+@media (max-width: 554px) {
+  .nav-link {
+    font-size: 11px;
+  }
+  .nav-list {
+    gap: 25px;
+  }
+}
+@media (max-width: 873px) {
+  .header-container {
+    justify-content: space-around;
+  }
+}
 @media (max-width: 390px) {
   .burger-menu {
     display: block;
@@ -472,9 +491,12 @@ template {
   height: 765px;
 }
 
+.preview-container {
+  flex-wrap: wrap;
+}
+
 .preview {
   margin-top: 32px;
-  max-width: 100vw;
 }
 
 .explore {
@@ -509,7 +531,7 @@ template {
 }
 
 .input {
-  width: 560px;
+  max-width: 560px;
   height: 22px;
   font-family: "Aleo";
   font-style: italic;
@@ -553,6 +575,11 @@ input::placeholder {
   color: #FFF;
 }
 
+@media (max-width: 424px) {
+  .search-block {
+    padding: 0px;
+  }
+}
 @media (max-width: 390px) {
   .wrapper-bg {
     background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%), url(./assets/images/bg-top-mobile.jpg);
@@ -614,13 +641,14 @@ input::placeholder {
 .steps-block {
   display: flex;
   margin: 40px 0px 0px 0px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.step-one {
+.step-one,
+.step-two,
+.step-three {
   display: flex;
-  margin-right: 231px;
   align-items: center;
   flex-direction: column;
 }
@@ -640,19 +668,6 @@ input::placeholder {
   line-height: 24px;
   color: #0D606F;
   margin-top: 30px;
-}
-
-.step-two {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-right: 160px;
-}
-
-.step-three {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 .steps-icon {
@@ -730,21 +745,24 @@ input::placeholder {
 }
 
 .destination {
-  height: 800px;
-  width: 800px;
+  height: 55.56vw;
+  width: 55.56vw;
   border-radius: 16px;
 }
 
 .destination-one {
-  background: url(./assets/images/Destination-1.jpg);
+  background: url(./assets/images/Destination-1.jpg) no-repeat;
+  background-size: auto 55.56vw;
 }
 
 .destination-two {
-  background: url(./assets/images/Destination-2.jpg);
+  background: url(./assets/images/Destination-2.jpg) no-repeat;
+  background-size: auto 55.56vw;
 }
 
 .destination-three {
-  background: url(./assets/images/Destination-3.jpg);
+  background: url(./assets/images/Destination-3.jpg) no-repeat;
+  background-size: auto 55.56vw;
 }
 
 .slider-wrapper {
@@ -758,6 +776,7 @@ input::placeholder {
   line-height: 53px;
   display: flex;
   justify-content: center;
+  text-align: center;
   color: #F2785C;
   margin-bottom: 46px;
 }
@@ -815,7 +834,8 @@ input::placeholder {
   line-height: 42px;
   color: #FFFFFF;
   position: absolute;
-  margin: 718px 0px 0px 15px;
+  bottom: 40px;
+  margin-left: 15px;
 }
 
 .vector-find {
@@ -1138,6 +1158,7 @@ body button:hover {
   max-width: 1200px;
   margin: 0 auto;
   height: 100%;
+  padding: 0px 10px 0px 10px;
 }
 
 @media (max-width: 390px) {

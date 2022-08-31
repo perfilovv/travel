@@ -4,9 +4,12 @@
   height: 765px;
 }
 
+.preview-container {
+  flex-wrap: wrap;
+}
+
 .preview {
   margin-top: 32px;
-  max-width: 100vw;
 }
 
 .explore {
@@ -41,7 +44,7 @@
 }
 
 .input {
-  width: 560px;
+  max-width: 560px;
   height: 22px;
   font-family: 'Aleo';
   font-style: italic;
@@ -75,6 +78,12 @@ input::placeholder {
   font-size: 24px;
   line-height: 32px;
   color: #FFF;
+}
+
+@media (max-width: 424px) {
+  .search-block {
+    padding: 0px;
+  }
 }
 
 @media (max-width: 390px) {

@@ -31,7 +31,7 @@
 .nav-list {
   display: flex;
   max-width: 527px;
-  padding: 0px;
+  padding: 0px 5px 0px 5px;
   gap: 42px;
 }
 
@@ -52,11 +52,34 @@
 .header-container {
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .nav-mobile,
 .burger-menu {
   display: none;
+}
+
+@media (max-width: 873px) {
+  .nav {
+    order: 3;
+  }
+}
+
+@media (max-width: 554px) {
+  .nav-link {
+    font-size: 11px;
+  }
+
+  .nav-list {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 873px) {
+  .header-container {
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 390px) {
