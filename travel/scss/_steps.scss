@@ -28,6 +28,15 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 0px 15px 0px 15px;
+}
+
+.step-two {
+  margin-left: 78px;
+}
+
+.step-three {
+  margin-right: -4px;
 }
 
 .frame {
@@ -45,6 +54,7 @@
   line-height: 24px;
   color: #0D606F;
   margin-top: 30px;
+  text-align: center;
 }
 
 .steps-icon {
@@ -52,6 +62,34 @@
   align-items: center;
   justify-content: center;
   height: 100px;
+}
+
+@media (max-width: 648px) {
+  .frame {
+    width: 70px;
+    height: 70px;
+  }
+
+  .steps-icon {
+    height: 70px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .steps-block:last-child {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 461px) {
+
+  .step-one,
+  .step-two,
+  .step-three {
+    padding: 0px;
+  }
 }
 
 @media (max-width: 390px) {

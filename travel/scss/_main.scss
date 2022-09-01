@@ -10,6 +10,7 @@
 
 .preview {
   margin-top: 32px;
+  max-width: 892px;
 }
 
 .explore {
@@ -35,8 +36,8 @@
 .search-block {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  max-width: 892px;
   height: 95px;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 16px;
@@ -52,7 +53,7 @@
   font-size: 24px;
   line-height: 29px;
   color: #F2785C;
-  margin: 0px 45px 0px 41px;
+  margin-left: 41px;
   background: transparent;
   border: none;
   outline: none;
@@ -80,9 +81,15 @@ input::placeholder {
   color: #FFF;
 }
 
-@media (max-width: 424px) {
+@media (max-width: 607px) {
   .search-block {
-    padding: 0px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 424px) {
+  .explore {
+    font-size: 70px;
   }
 }
 

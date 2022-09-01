@@ -27,6 +27,8 @@
 .story {
   display: flex;
   flex-direction: row-reverse;
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
 .stories-tit {
@@ -62,9 +64,9 @@
 }
 
 .stories-img {
-  margin: 0px 40px 30px 0px;
   filter: drop-shadow(0px 4px 4px #0D606F);
   border-radius: 16px;
+  height: 17.37vw;
 }
 
 .button-more {
@@ -74,6 +76,15 @@
 
 .stories-text-mobile {
   display: none;
+}
+
+@media (max-width: 1112px) {
+  .stories-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
 }
 
 @media (max-width: 390px) {

@@ -26,12 +26,13 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .nav-list {
   display: flex;
   max-width: 527px;
-  padding: 0px 5px 0px 5px;
+  padding: 0px;
   gap: 42px;
 }
 
@@ -51,8 +52,8 @@
 
 .header-container {
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .nav-mobile,
@@ -60,7 +61,7 @@
   display: none;
 }
 
-@media (max-width: 873px) {
+@media (max-width: 893px) {
   .nav {
     order: 3;
   }
