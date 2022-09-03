@@ -64,7 +64,7 @@
   height: 100px;
 }
 
-@media (max-width: 648px) {
+@media (max-width: 685px) {
   .frame {
     width: 70px;
     height: 70px;
@@ -78,8 +78,8 @@
     font-size: 14px;
   }
 
-  .steps-block:last-child {
-    margin-bottom: 5px;
+  .step-two {
+    margin: 0px;
   }
 }
 
@@ -143,6 +143,7 @@
   }
 
   .tell-us {
+    text-align: left;
     max-width: 94px;
   }
 

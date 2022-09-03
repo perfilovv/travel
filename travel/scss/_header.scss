@@ -79,7 +79,7 @@
 
 @media (max-width: 873px) {
   .header-container {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -88,15 +88,14 @@
   .burger-menu {
     display: block;
     position: relative;
-    max-width: 35px;
+    width: 35px;
     height: 18px;
-    margin-right: 8px;
   }
 
   .burger-line {
     position: absolute;
     display: block;
-    max-width: 26.25px;
+    width: 26.25px;
     height: 2.67px;
     left: 0;
     background-color: #FFF;
@@ -118,7 +117,7 @@
 
   .nav {
     position: fixed;
-    max-width: 165px;
+    width: 165px;
     height: 251px;
     top: 0;
     left: calc(100% + 10px);
@@ -157,7 +156,7 @@
     position: absolute;
     left: 8px;
     top: 8px;
-    max-width: 30px;
+    width: 30px;
     height: 30px;
     z-index: 11;
     display: flex;
@@ -169,7 +168,7 @@
     display: block;
     position: absolute;
     height: 2px;
-    max-width: 64.1%;
+    width: 64.1%;
     background-color: rgba(255, 255, 255, 0.7);
     top: 50%;
   }

@@ -114,29 +114,31 @@ input::placeholder {
   }
 
   .preview {
-    max-width: 100%;
+    width: 360px;
     height: 100%;
     margin-top: 67px;
   }
 
   .search-block {
+    justify-content: space-between;
     margin: 0 auto;
-    max-width: 360px;
     height: 48px;
+    padding-right: 0px;
   }
 
   .input {
-    margin: 0 auto;
+    margin: 0px 0px 0px 16.55px;
     max-width: 226px;
     font-size: 14px;
     line-height: 17px;
+    padding: 0px;
   }
 
   .start-planning {
-    margin-right: 9px;
     font-size: 11px;
     line-height: 15px;
     max-width: 92px;
     height: 30px;
+    margin-right: 9px;
   }
 }
