@@ -20,6 +20,7 @@
 </head>
 
 <body>
+  <div class="menu-shadow"></div>
   <div class="wrapper-bg">
     <header class="header">
       <div class="header-container container">
@@ -29,13 +30,24 @@
         </div>
         <nav class="nav">
           <ul class="nav-list">
-            <li><a href="#steps">How It Works</a></li>
-            <li><a href="#main">Plan Your Trip</a></li>
-            <li><a href="#destinations">Destinations</a></li>
-            <li><a href="#stories-header">Travel Stories</a></li>
+            <li><a href="#steps" class="nav-link">How It Works</a></li>
+            <li><a href="#main" class="nav-link">Plan Your Trip</a></li>
+            <li><a href="#destinations" class="nav-link">Destinations</a></li>
+            <li><a href="#stories-header" class="nav-link">Travel Stories</a></li>
+            <li class="nav-mobile"><a href="#" class="nav-link">Account</a></li>
+            <li class="nav-mobile"><a href="#footer" class="nav-link">Social Media</a></li>
           </ul>
-          <button class="login">Login</button>
+          <div class="nav-close">
+            <span class="nav-close-line"></span>
+            <span class="nav-close-line"></span>
+          </div>
         </nav>
+        <button class="login">Login</button>
+        <div class="burger-menu burger">
+          <span class="burger-line burger-line-first"></span>
+          <span class="burger-line burger-line-second"></span>
+          <span class="burger-line burger-line-third"></span>
+        </div>
       </div>
     </header>
     <main class="main" id="main">
@@ -58,48 +70,49 @@
         <div class="step-one">
           <div class="frame">
             <div class="steps-icon">
-              <img src="./assets/icons/Bicycle.svg" alt="bicycle">
+              <img src="./assets/icons/Bicycle.svg" alt="bicycle" class="steps-icon-size">
             </div>
           </div>
-          <span class="description">Tell us what you want to do</span>
+          <span class="description tell-us">Tell us what you want to do</span>
         </div>
         <div class="step-two">
-          <div class="frame">
+          <div class="frame frame-center">
             <div class="steps-icon">
-              <img src="./assets/icons/Calendar.svg" alt="calendar">
+              <img src="./assets/icons/Calendar.svg" alt="calendar" class="steps-icon-size">
             </div>
           </div>
-          <span class="description">Share us preferable dates </span>
+          <span class="description share-us">Share us preferable dates </span>
         </div>
         <div class="step-three">
           <div class="frame">
             <div class="steps-icon">
-              <img src="./assets/icons/Airplane.svg" alt="airplane">
+              <img src="./assets/icons/Airplane.svg" alt="airplane" class="steps-icon-size-airplane">
             </div>
           </div>
-          <span class="description">We will give you recommendations</span>
+          <span class="description we-will">We will give you recommendations</span>
         </div>
       </div>
     </div>
   </section>
   <section class="destinations" id="destinations">
     <h2 class="destination-header">POPULAR DESTINATIONS</h2>
-    <div class="destination-slider">
-      <div class="destination-one destination">
-        <span class="country">SPAIN</span>
-        <img src="./assets/images/Destination-1.jpg" alt="destination-1" class="destination-pic">
-      </div>
-      <div class="destination-two destination">
-        <span class="country">JAPAN</span>
-        <img src="./assets/images/Destination-2.jpg" alt="destination-2" class="destination-pic">
-      </div>
-      <div class="destination-three destination">
-        <span class="country">USA</span>
-        <img src="./assets/images/Destination-3.jpg" alt="destination-3" class="destination-pic">
+    <div class="arrow-left arrow"></div>
+    <div class="arrow-right arrow"></div>
+    <div class="slider-wrapper">
+      <div class="destination-slider">
+        <div class="destination-one destination">
+          <span class="country">SPAIN</span>
+        </div>
+        <div class="destination-two destination">
+          <span class="country">JAPAN</span>
+        </div>
+        <div class="destination-three destination">
+          <span class="country">USA</span>
+        </div>
       </div>
     </div>
     <div class="switcher">
-      <span class="ellipse"></span>
+      <span class="ellipse left"></span>
       <span class="ellipse middle"></span>
       <span class="ellipse"></span>
     </div>
@@ -111,71 +124,107 @@
       <div class="stories-container container">
         <h2 class="stories-header" id="stories-header">TRAVEL STORIES</h2>
         <div class="story-1 story">
-          <p class="stories-text">
-            <span class="thailand stories-tit">10 Photos of Attractive Thailand</span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit...<br>
+          <div class="stories-wrapper">
+            <h3 class="thailand stories-tit">10 Photos of Attractive Thailand</h3>
+            <p class="stories-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit...
+            </p>
+            <p class="stories-text-mobile">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla.Lorem ipsum dolor sit a...
+            </p>
             <span class="read-more">Read More</span>
-          </p>
+          </div>
           <img src="./assets/images/thailand.jpg" alt="thailand" class="stories-img">
+          <img src="./assets/images/thailand-mobile.jpg" alt="thailand" class="stories-img-mobile">
         </div>
         <div class="story-2 story">
-          <p class="stories-text">
-            <span class="stories-tit">Canyonlands National Park, Utah</span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui
-            officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...<br>
+          <div class="stories-wrapper">
+            <h3 class="stories-tit">Canyonlands National Park, Utah</h3>
+            <p class="stories-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui
+              officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            </p>
+            <p class="stories-text-mobile">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla.Lorem ipsum dolor sit a...
+            </p>
             <span class="read-more">Read More</span>
-          </p>
+          </div>
           <img src="./assets/images/utah.jpg" alt="utah" class="stories-img">
+          <img src="./assets/images/utah-mobile.jpg" alt="utah" class="stories-img-mobile">
         </div>
         <div class="story-3 story">
-          <p class="stories-text">
-            <span class="stories-tit">I left my heart in the Mountains!</span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-            ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit
-            anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...<br>
+          <div class="stories-wrapper">
+            <h3 class="stories-tit">I left my heart in the Mountains!</h3>
+            <p class="stories-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+              ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit
+              anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            </p>
+            <p class="stories-text-mobile">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla.Lorem ipsum dolor sit a...
+            </p>
             <span class="read-more">Read More</span>
-          </p>
+          </div>
           <img src="./assets/images/mountains.jpg" alt="mountains" class="stories-img">
+          <img src="./assets/images/mountains-mobile.jpg" alt="mountains" class="stories-img-mobile">
         </div>
         <div class="story-4 story">
-          <p class="stories-text">
-            <span class="stories-tit">The Longest journey in my life!</span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat
-            nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-            id
-            est
-            laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...<br>
+          <div class="stories-wrapper">
+            <h3 class="stories-tit">The Longest journey in my life!</h3>
+            <p class="stories-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat
+              nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+              id
+              est
+              laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            </p>
+            <p class="stories-text-mobile">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla.Lorem ipsum dolor sit a...
+            </p>
             <span class="read-more">Read More</span>
-          </p>
-          <img src="./assets/images/journey.jpg" alt="journey" class="stories-img">
+          </div>
+          <img src="./assets/images/journey.jpg" alt="journey" class="stories-img last-stories-img">
+          <img src="./assets/images/journey-mobile.jpg" alt="journey" class="stories-img-mobile last-stories-img">
         </div>
         <button class="button-find button-more"><img src="./assets/icons/bi_arrow-right.svg" alt="arrow-right"
             class="vector-find">See More</button>
       </div>
     </div>
   </section>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="footer-container container">
       <div class="media-wrapper">
         <span class="rights">All Rights Reserved © Travel Portal</span>
