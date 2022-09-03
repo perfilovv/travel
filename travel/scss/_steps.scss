@@ -18,15 +18,25 @@
 .steps-block {
   display: flex;
   margin: 40px 0px 0px 0px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.step-one {
+.step-one,
+.step-two,
+.step-three {
   display: flex;
-  margin-right: 231px;
   align-items: center;
   flex-direction: column;
+  padding: 0px 15px 0px 15px;
+}
+
+.step-two {
+  margin-left: 78px;
+}
+
+.step-three {
+  margin-right: -4px;
 }
 
 .frame {
@@ -44,19 +54,7 @@
   line-height: 24px;
   color: #0D606F;
   margin-top: 30px;
-}
-
-.step-two {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-right: 160px;
-}
-
-.step-three {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
 }
 
 .steps-icon {
@@ -64,4 +62,105 @@
   align-items: center;
   justify-content: center;
   height: 100px;
+}
+
+@media (max-width: 685px) {
+  .frame {
+    width: 70px;
+    height: 70px;
+  }
+
+  .steps-icon {
+    height: 70px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .step-two {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 461px) {
+
+  .step-one,
+  .step-two,
+  .step-three {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 390px) {
+  .steps-header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 20px;
+  }
+
+  .steps-block {
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .frame {
+    width: 70px;
+    height: 70px;
+  }
+
+  .frame-center {
+    margin-left: 4px;
+  }
+
+  .steps-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .steps-icon-size {
+    width: 35px;
+  }
+
+  .steps-icon-size-airplane {
+    width: 40px;
+  }
+
+  .step-one,
+  .step-two,
+  .step-three {
+    justify-content: center;
+    margin: 0px;
+  }
+
+  .step-one {
+    align-items: flex-start;
+  }
+
+  .step-three {
+    align-items: flex-end;
+  }
+
+  .tell-us {
+    text-align: left;
+    max-width: 94px;
+  }
+
+  .share-us {
+    max-width: 111px;
+    margin-left: 4px;
+  }
+
+  .we-will {
+    text-align: right;
+    max-width: 98px;
+  }
+
+  .description {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 20px;
+    height: 24px;
+  }
 }

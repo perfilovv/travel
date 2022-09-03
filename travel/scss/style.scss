@@ -47,7 +47,14 @@ body {
 
 .container {
   display: flex;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   height: 100%;
+  padding: 0px 10px 0px 10px;
+}
+
+@media (max-width: 390px) {
+  .container {
+    max-width: 360px;
+  }
 }
