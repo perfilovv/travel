@@ -476,7 +476,7 @@ template {
     z-index: 2;
     top: 0;
     left: 0;
-    max-width: 100vw;
+    width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease-in;
@@ -785,7 +785,10 @@ input::placeholder {
   margin-top: 97px;
 }
 
-.destination {
+.destination,
+.destination-one,
+.destination-two,
+.destination-three {
   height: 55.56vw;
   width: 55.56vw;
   border-radius: 16px;
@@ -807,8 +810,6 @@ input::placeholder {
 }
 
 .slider-wrapper {
-  display: flex;
-  justify-content: center;
   overflow-x: hidden;
 }
 
@@ -834,10 +835,7 @@ input::placeholder {
   display: flex;
   justify-content: center;
   margin-top: 25px;
-}
-
-.switcher > *:not(:last-child) {
-  margin-right: 10px;
+  gap: 10px;
 }
 
 .ellipse {
@@ -845,9 +843,11 @@ input::placeholder {
   height: 20px;
   border-radius: 10px;
   background: rgba(242, 120, 92, 0.5);
+  cursor: pointer;
+  transition: 0.5s;
 }
 
-.middle {
+.ellipse-active {
   background: #F2785C;
 }
 
@@ -883,11 +883,107 @@ input::placeholder {
   margin-right: 6px;
 }
 
-.arrows {
-  display: none;
+.arrow {
+  position: absolute;
+  height: 55.7vw;
+  width: 18.1vw;
+  background: none;
 }
 
+.arrow-left {
+  left: 0;
+  top: 170%;
+}
+
+.arrow-right {
+  right: 0;
+  top: 170%;
+}
+
+.slider-right {
+  -webkit-animation-name: move-next;
+          animation-name: move-next;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.slider-left {
+  -webkit-animation-name: move-prev;
+          animation-name: move-prev;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes move-next {
+  from {
+    left: calc((15px + 45 * (100vw - 390px) / 1050 + 55.5555555556vw) / 2);
+  }
+  to {
+    left: calc((-15px - 45 * (100vw - 390px) / 1050 - 55.5555555556vw) / 2);
+  }
+}
+
+@keyframes move-next {
+  from {
+    left: calc((15px + 45 * (100vw - 390px) / 1050 + 55.5555555556vw) / 2);
+  }
+  to {
+    left: calc((-15px - 45 * (100vw - 390px) / 1050 - 55.5555555556vw) / 2);
+  }
+}
+@-webkit-keyframes move-prev {
+  from {
+    left: calc((-15px - 45 * (100vw - 390px) / 1050 - 55.5555555556vw) / 2);
+  }
+  to {
+    left: calc((15px + 45 * (100vw - 390px) / 1050 + 55.5555555556vw) / 2);
+  }
+}
+@keyframes move-prev {
+  from {
+    left: calc((-15px - 45 * (100vw - 390px) / 1050 - 55.5555555556vw) / 2);
+  }
+  to {
+    left: calc((15px + 45 * (100vw - 390px) / 1050 + 55.5555555556vw) / 2);
+  }
+}
 @media (max-width: 390px) {
+  @-webkit-keyframes move-next {
+    from {
+      left: 0;
+    }
+    to {
+      left: -96vw;
+    }
+  }
+  @keyframes move-next {
+    from {
+      left: 0;
+    }
+    to {
+      left: -96vw;
+    }
+  }
+  @-webkit-keyframes move-prev {
+    from {
+      left: -96vw;
+    }
+    to {
+      left: 0vw;
+    }
+  }
+  @keyframes move-prev {
+    from {
+      left: -96vw;
+    }
+    to {
+      left: 0vw;
+    }
+  }
   .destinations {
     position: relative;
     margin-top: 20px;
@@ -904,9 +1000,14 @@ input::placeholder {
     font-size: 20px;
     line-height: 26px;
     margin: 8px 0px 0px 15px;
-    bottom: unset;
+    bottom: 0;
+    top: 0;
   }
-  .destination {
+  .destination,
+.destination-one,
+.destination-two,
+.destination-three {
+    display: flex;
     width: 92.31vw;
     height: 53.85vw;
   }
@@ -915,38 +1016,27 @@ input::placeholder {
     height: 210px;
   }
   .destination-slider {
-    position: static;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-left: 15px;
   }
   .destination-one {
     background: url(./assets/images/Destination-1-mobile.jpg) no-repeat;
-    background-size: auto 53.85vw;
-    order: 1;
   }
   .destination-two {
     background: url(./assets/images/Destination-2-mobile.jpg) no-repeat;
-    background-size: auto 53.85vw;
-    order: 2;
   }
-  .destination-tree {
+  .destination-three {
     background: url(./assets/images/Destination-3-mobile.jpg) no-repeat;
-    background-size: auto 53.85vw;
-    order: 3;
   }
   .switcher {
+    position: relative;
     margin-top: -20px;
-  }
-  .switcher > *:not(:last-child) {
-    margin-right: 6px;
+    gap: 6px;
   }
   .ellipse {
     width: 8px;
     height: 8px;
-  }
-  .left {
-    background: #F2785C;
-  }
-  .middle {
-    background: rgba(242, 120, 92, 0.5);
   }
   .button-find {
     font-size: 11px;
@@ -974,7 +1064,8 @@ input::placeholder {
     right: 4.6%;
   }
   .arrow-left {
-    background: url("/assets/icons/ep_arrow-up-bold-left.svg");
+    background: url("/assets/icons/ep_arrow-up-bold.svg");
+    transform: rotate(180deg);
     left: 4.6%;
   }
 }
