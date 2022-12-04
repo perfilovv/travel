@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons//favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicons//site.webmanifest">
+  <link rel="mask-icon" href="./assets/favicons//safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Travel</title>
+</head>
+
+<body>
+  <div class="menu-shadow"></div>
+  <div class="wrapper-bg">
+    <header class="header">
+      <div class="header-container container">
+        <div class="logo">
+          <img src="./assets/icons/Travel-Portal.svg" alt="logo">
+          <div class="travel-portal">Travel Portal</div>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#steps" class="nav-link">How It Works</a></li>
+            <li><a href="#main" class="nav-link">Plan Your Trip</a></li>
+            <li><a href="#destinations" class="nav-link">Destinations</a></li>
+            <li><a href="#stories-header" class="nav-link">Travel Stories</a></li>
+            <li class="nav-mobile"><a href="#" class="nav-link" data-modal-target="#modal">Account</a></li>
+            <li class="nav-mobile"><a href="#footer" class="nav-link">Social Media</a></li>
+          </ul>
+          <div class="nav-close">
+            <span class="nav-close-line"></span>
+            <span class="nav-close-line"></span>
+          </div>
+        </nav>
+        <button class="login" data-modal-target="#modal">Login</button>
+        <div class="modal" id="modal">
+          <div class="wrapper-popup">
+            <p class="login-account">Log in to your account</p>
+            <div class="buttons">
+              <button class="sign-in-btn btn-facebook"><img src="./assets/icons/Facebook-Logo.svg"
+                  alt="facebook-logo">Sign In
+                with Facebook</button>
+              <button class="sign-in-btn btn-google"><img src="./assets/icons/Google-Logo.svg" alt="google-logo">Sign In
+                with
+                Google</button>
+            </div>
+            <div class="lines">
+              <span class="line"></span><span class="or">or</span><span class="line"></span>
+            </div>
+            <p class="data email">E-mail</p>
+            <input type="email" class="input-data input-email">
+            <p class="data password">Password</p>
+            <input type="password" class="input-data input-password">
+            <button class="sign-in-btn btn-sign-in">Sign In</button>
+            <p class="forgot-password">Forgot Your Password?</p>
+            <span class="bottom-line"></span>
+            <div class="bottom-register">
+              <p class="register">Don’t have an account?</p>&nbsp<span class="register-word">Register</span>
+            </div>
+          </div>
+        </div>
+        <!-- <div id="overlay"></div> -->
+        <div class="burger-menu burger">
+          <span class="burger-line burger-line-first"></span>
+          <span class="burger-line burger-line-second"></span>
+          <span class="burger-line burger-line-third"></span>
+        </div>
+      </div>
+    </header>
+    <main class="main" id="main">
+      <div class="preview-container container">
+        <section class="preview">
+          <h1 class="explore">Explore the beauty of the World</h1>
+          <p class="recomendations">Receive personalized recommendations for countries, hotels, activities and more</p>
+          <div class="search-block">
+            <input type="text" placeholder="What would you like to do?" class="input">
+            <button class="start-planning">Start Planning</button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <section class="steps" id="steps">
+    <div class="steps-container container">
+      <h2 class="steps-header">3 STEPS TO THE PERFECT TRIP</h2>
+      <div class="steps-block">
+        <div class="step-one">
+          <div class="frame">
+            <div class="steps-icon">
+              <img src="./assets/icons/Bicycle.svg" alt="bicycle" class="steps-icon-size">
+            </div>
+          </div>
+          <span class="description tell-us">Tell us what you want to do</span>
+        </div>
+        <div class="step-two">
+          <div class="frame frame-center">
+            <div class="steps-icon">
+              <img src="./assets/icons/Calendar.svg" alt="calendar" class="steps-icon-size">
+            </div>
+          </div>
+          <span class="description share-us">Share us preferable dates </span>
+        </div>
+        <div class="step-three">
+          <div class="frame">
+            <div class="steps-icon">
+              <img src="./assets/icons/Airplane.svg" alt="airplane" class="steps-icon-size-airplane">
+            </div>
+          </div>
+          <span class="description we-will">We will give you recommendations</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="destinations" id="destinations">
+    <h2 class="destination-header">POPULAR DESTINATIONS</h2>
+    <div class="slider-wrapper">
+      <div class="destination-slider">
+        <div class="destination">
+          <div class="destination-one"></div>
+          <span class="country">SPAIN</span>
+        </div>
+        <div class="destination">
+          <div class="destination-two"></div>
+          <span class="country">JAPAN</span>
+        </div>
+        <div class="destination">
+          <div class="destination-three"></div>
+          <span class="country">USA</span>
+        </div>
+      </div>
+      <div class="arrow-left arrow"></div>
+      <div class="arrow-right arrow"></div>
+    </div>
+    <div class="switcher">
+      <span class="ellipse" id="left"></span>
+      <span class="ellipse" id="center"></span>
+      <span class="ellipse" id="right"></span>
+    </div>
+    <button class="button-find"><img src="./assets/icons/bi_arrow-right.svg" alt="arrow-right" class="vector-find">Find
+      More</button>
+  </section>
+  <section class="stories">
+    <div class="background-white">
+      <div class="stories-container container">
+        <h2 class="stories-header" id="stories-header">TRAVEL STORIES</h2>
+        <div class="story-1 story">
+          <div class="stories-wrapper">
+            <h3 class="thailand stories-tit">10 Photos of Attractive Thailand</h3>
+            <p class="stories-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit...
+            </p>
+            <p class="stories-text-mobile">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla.Lorem ipsum dolor sit a...
+            </p>
+            <span class="read-more">Read More</span>
+          </div>
+          <img src="./assets/images/thailand.jpg" alt="thailand" class="stories-img">
+          <img src="./assets/images/thailand-mobile.jpg" alt="thailand" class="stories-img-mobile">
+        </div>
+        <div class="story-2 story">
+          <div class="stories-wrapper">
+            <h3 class="stories-tit">Canyonlands National Park, Utah</h3>
+            <p class="stories-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+              qui
+              officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            </p>
+            <p class="stories-text-mobile">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla.Lorem ipsum dolor sit a...
+            </p>
+            <span class="read-more">Read More</span>
+          </div>
+          <img src="./assets/images/utah.jpg" alt="utah" class="stories-img">
+          <img src="./assets/images/utah-mobile.jpg" alt="utah" class="stories-img-mobile">
+        </div>
+        <div class="story-3 story">
+          <div class="stories-wrapper">
+            <h3 class="stories-tit">I left my heart in the Mountains!</h3>
+            <p class="stories-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+              ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit
+              anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            </p>
+            <p class="stories-text-mobile">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla.Lorem ipsum dolor sit a...
+            </p>
+            <span class="read-more">Read More</span>
+          </div>
+          <img src="./assets/images/mountains.jpg" alt="mountains" class="stories-img">
+          <img src="./assets/images/mountains-mobile.jpg" alt="mountains" class="stories-img-mobile">
+        </div>
+        <div class="story-4 story">
+          <div class="stories-wrapper">
+            <h3 class="stories-tit">The Longest journey in my life!</h3>
+            <p class="stories-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat
+              nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+              id
+              est
+              laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            </p>
+            <p class="stories-text-mobile">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla.Lorem ipsum dolor sit a...
+            </p>
+            <span class="read-more">Read More</span>
+          </div>
+          <img src="./assets/images/journey.jpg" alt="journey" class="stories-img last-stories-img">
+          <img src="./assets/images/journey-mobile.jpg" alt="journey" class="stories-img-mobile last-stories-img">
+        </div>
+        <button class="button-find button-more"><img src="./assets/icons/bi_arrow-right.svg" alt="arrow-right"
+            class="vector-find">See More</button>
+      </div>
+    </div>
+  </section>
+  <footer class="footer" id="footer">
+    <div class="footer-container container">
+      <div class="media-wrapper">
+        <span class="rights">All Rights Reserved © Travel Portal</span>
+        <ul class="social-media">
+          <li><a href="https://github.com/perfilovv"><img src="./assets/icons/akar-icons_instagram-fill.svg"
+                alt="instagram" class="footer-icon"></a></li>
+          <li><a href="https://www.youtube.com/c/rollingscopesschool"><img src="./assets/icons/akar-icons_video.svg"
+                alt="youtube" class="footer-icon"></a></li>
+          <li><a href="https://rs.school/js-stage0/"><img src="./assets/icons/akar-icons_twitter-fill.svg" alt="twitter"
+                class="footer-icon"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
