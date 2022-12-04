@@ -1,45 +1,45 @@
-(function () {
-  const burgerItem = document.querySelector('.burger');
-  const popMenu = document.querySelector('.nav');
-  const closeMenu = document.querySelector('.nav-close');
-  const shadowMenu = document.querySelector('.menu-shadow');
-  const notScroll = document.querySelector('body');
+const burgerItem = document.querySelector('.burger');
+const popMenu = document.querySelector('.nav');
+const closeMenu = document.querySelector('.nav-close');
+const shadowMenu = document.querySelector('.menu-shadow');
+const notScroll = document.querySelector('body');
 
-  const popMenuAdd = () => popMenu.classList.add('nav-active');
-  const shadowMenuAdd = () => shadowMenu.classList.add('menu-shadow-active');
-  const notScrollAdd = () => notScroll.classList.add('not-scroll');
+const popMenuAdd = () => popMenu.classList.add('nav-active');
+const shadowMenuAdd = () => shadowMenu.classList.add('menu-shadow-active');
+const notScrollAdd = () => notScroll.classList.add('not-scroll');
 
-  const popMenuRemove = () => popMenu.classList.remove('nav-active');
-  const shadowMenuRemove = () => shadowMenu.classList.remove('menu-shadow-active');
-  const notScrollRemove = () => notScroll.classList.remove('not-scroll');
+const popMenuRemove = () => popMenu.classList.remove('nav-active');
+const shadowMenuRemove = () => shadowMenu.classList.remove('menu-shadow-active');
+const notScrollRemove = () => notScroll.classList.remove('not-scroll');
 
-  burgerItem.addEventListener('click', () => {
-    popMenuAdd();
-    shadowMenuAdd();
-    notScrollAdd();
-  });
+burgerItem.addEventListener('click', () => {
+  popMenuAdd();
+  shadowMenuAdd();
+  notScrollAdd();
+});
 
-  closeMenu.addEventListener('click', () => {
-    popMenuRemove();
-    shadowMenuRemove();
-    notScrollRemove();
-  });
+closeMenu.addEventListener('click', () => {
+  popMenuRemove();
+  shadowMenuRemove();
+  notScrollRemove();
+});
 
-  shadowMenu.addEventListener('click', () => {
-    popMenuRemove();
-    shadowMenuRemove();
-    notScrollRemove();
-  });
+shadowMenu.addEventListener('click', () => {
+  popMenuRemove();
+  shadowMenuRemove();
+  notScrollRemove();
+});
 
-  function closeNav() {
-    popMenuRemove();
-    shadowMenuRemove();
-    notScrollRemove();
-  }
+function closeNav() {
+  popMenuRemove();
+  shadowMenuRemove();
+  notScrollRemove();
+}
 
-  const navLinks = document.querySelectorAll('.nav-link');
-  navLinks.forEach((elements) => elements.addEventListener('click', closeNav));
-}());
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach((elements) => elements.addEventListener('click', closeNav));
+
+
 
 const slider = document.querySelector('.destination-slider');
 const btnPrev = document.querySelector('.arrow-left');
@@ -132,3 +132,88 @@ slider.addEventListener('animationend', (e) => {
   }
 });
 
+
+
+const openModalWindow = document.querySelectorAll('[data-modal-target]');
+
+openModalWindow.forEach(item => {
+  item.addEventListener('click', () => {
+    const modal = document.querySelector(item.dataset.modalTarget);
+    openModal(modal);
+  });
+});
+
+function openModal(modal) {
+  if (modal == null) return;
+  modal.classList.add('active');
+  shadowMenuAdd();
+  notScrollAdd();
+}
+
+function closeModal(modal) {
+  if (modal == null) return;
+  modal.classList.remove('active');
+  shadowMenuRemove();
+  notScrollRemove();
+}
+
+shadowMenu.addEventListener('click', () => {
+  modal.classList.remove('active');
+  shadowMenuRemove();
+  notScrollRemove();
+});
+
+const signIn = document.querySelector('.btn-sign-in');
+
+signIn.addEventListener('click', () => {
+  let email = document.querySelector('.input-email');
+  let password = document.querySelector('.input-password');
+
+  if (!email.value) alert('Заполните поле "Email"');
+  else if (!password.value) alert('Заполните поле "Password"');
+  else alert(`Email: ${email.value} \nPassword: ${password.value}`);
+});
+
+let registerWord = document.querySelector('.register-word');
+const signInBtnFacebook = document.querySelector('.btn-facebook');
+const signInBtnGoogle = document.querySelector('.btn-google');
+const lines = document.querySelector('.lines');
+const forgotPassword = document.querySelector('.forgot-password');
+const loginAccount = document.querySelector('.login-account');
+const btnSignIn = document.querySelector('.btn-sign-in');
+const register = document.querySelector('.register');
+
+registerWord.addEventListener('click', () => {
+  popUpSwitch();
+});
+
+function logInSwitch() {
+  signInBtnFacebook.style.display = 'none';
+  signInBtnGoogle.style.display = 'none';
+  lines.style.display = 'none';
+  forgotPassword.style.display = 'none';
+  loginAccount.textContent = 'Create account';
+  btnSignIn.textContent = 'Sign Up';
+  registerWord.textContent = 'Log in';
+  register.textContent = 'Already have an account?';
+
+}
+
+function registerSwitch() {
+  signInBtnFacebook.style.display = 'flex';
+  signInBtnGoogle.style.display = 'flex';
+  lines.style.display = 'flex';
+  forgotPassword.style.display = 'flex';
+  loginAccount.textContent = 'Log in to your account';
+  btnSignIn.textContent = 'Sign In';
+  registerWord.textContent = 'Register';
+  register.textContent = 'Don\'t have an account?';
+}
+
+function popUpSwitch() {
+  if (registerWord.textContent == 'Log in') {
+    registerSwitch();
+  } else {
+    logInSwitch();
+  }
+}

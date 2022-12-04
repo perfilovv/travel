@@ -61,6 +61,21 @@
   display: none;
 }
 
+.menu-shadow-active {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease-in;
+}
+
+.not-scroll {
+  overflow-y: clip;
+}
+
 @media (max-width: 893px) {
   .nav {
     order: 3;
@@ -181,18 +196,4 @@
     transform: translateY(-50%) rotate(-45deg);
   }
 
-  .menu-shadow-active {
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: all 0.5s ease-in;
-  }
-
-  .not-scroll {
-    overflow-y: clip;
-  }
 }
