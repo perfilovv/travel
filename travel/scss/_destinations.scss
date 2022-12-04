@@ -8,6 +8,7 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .destination,
 .destination-one,
 .destination-two,
@@ -15,6 +16,9 @@
 =======
 .destination {
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+.destination {
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   height: 55.56vw;
   width: 55.56vw;
   border-radius: 16px;
@@ -37,10 +41,15 @@
 
 .slider-wrapper {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   display: flex;
   justify-content: center;
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   overflow-x: hidden;
 }
 
@@ -67,13 +76,19 @@
   justify-content: center;
   margin-top: 25px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   gap: 10px;
 =======
+=======
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
 }
 
 .switcher>*:not(:last-child) {
   margin-right: 10px;
+<<<<<<< HEAD
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
 }
 
 .ellipse {
@@ -81,6 +96,7 @@
   height: 20px;
   border-radius: 10px;
   background: rgba(242, 120, 92, 0.5);
+<<<<<<< HEAD
 <<<<<<< HEAD
   cursor: pointer;
   transition: 0.5s;
@@ -92,6 +108,11 @@
 
 .middle {
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+}
+
+.middle {
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   background: #F2785C;
 }
 
@@ -127,6 +148,7 @@
   margin-right: 6px;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .arrow {
   position: absolute;
@@ -206,6 +228,13 @@
 
 @media (max-width: 390px) {
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+.arrows {
+  display: none;
+}
+
+@media (max-width: 390px) {
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   .destinations {
     position: relative;
     margin-top: 20px;
@@ -225,6 +254,7 @@
     line-height: 26px;
     margin: 8px 0px 0px 15px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     bottom: 0;
     top: 0;
   }
@@ -240,14 +270,23 @@
 
   .destination {
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+    bottom: unset;
+  }
+
+  .destination {
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
     width: 92.31vw;
     height: 53.85vw;
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   .destination-pic {
     max-width: 360px;
     height: 210px;
@@ -255,38 +294,53 @@
 
   .destination-slider {
 <<<<<<< HEAD
+<<<<<<< HEAD
     justify-content: flex-start;
     gap: 15px;
     margin-left: 15px;
 =======
     position: static;
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+    position: static;
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   }
 
   .destination-one {
     background: url(./assets/images/Destination-1-mobile.jpg) no-repeat;
+<<<<<<< HEAD
 <<<<<<< HEAD
     // background-size: auto 53.85vw;
 =======
     background-size: auto 53.85vw;
     order: 1;
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+    background-size: auto 53.85vw;
+    order: 1;
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   }
 
   .destination-two {
     background: url(./assets/images/Destination-2-mobile.jpg) no-repeat;
 <<<<<<< HEAD
+<<<<<<< HEAD
     // background-size: auto 53.85vw;
+=======
+    background-size: auto 53.85vw;
+    order: 2;
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   }
 
-  .destination-three {
+  .destination-tree {
     background: url(./assets/images/Destination-3-mobile.jpg) no-repeat;
-    // background-size: auto 53.85vw;
+    background-size: auto 53.85vw;
+    order: 3;
   }
 
   .switcher {
-    position: relative;
     margin-top: -20px;
+<<<<<<< HEAD
     gap: 6px;
 =======
     background-size: auto 53.85vw;
@@ -301,11 +355,16 @@
 
   .switcher {
     margin-top: -20px;
+=======
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   }
 
   .switcher>*:not(:last-child) {
     margin-right: 6px;
+<<<<<<< HEAD
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   }
 
   .ellipse {
@@ -314,7 +373,10 @@
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   .left {
     background: #F2785C;
   }
@@ -323,7 +385,10 @@
     background: rgba(242, 120, 92, 0.5);
   }
 
+<<<<<<< HEAD
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   .button-find {
     font-size: 11px;
     line-height: 15px;
@@ -356,11 +421,15 @@
 
   .arrow-left {
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: url("/assets/icons/ep_arrow-up-bold.svg");
     transform: rotate(180deg);
 =======
     background: url('/assets/icons/ep_arrow-up-bold-left.svg');
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+    background: url('/assets/icons/ep_arrow-up-bold-left.svg');
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
     left: 4.6%;
   }
 }

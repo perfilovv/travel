@@ -372,6 +372,7 @@ template {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .menu-shadow-active {
   position: fixed;
   z-index: 2;
@@ -389,6 +390,8 @@ template {
 
 =======
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
 @media (max-width: 893px) {
   .nav {
     order: 3;
@@ -490,7 +493,10 @@ template {
     transform: translateY(-50%) rotate(-45deg);
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   .menu-shadow-active {
     position: fixed;
     z-index: 2;
@@ -504,7 +510,10 @@ template {
   .not-scroll {
     overflow-y: clip;
   }
+<<<<<<< HEAD
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
 }
 .wrapper-bg {
   background: url("./assets/images/bg-top.jpg") no-repeat;
@@ -807,6 +816,7 @@ input::placeholder {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .destination,
 .destination-one,
 .destination-two,
@@ -814,6 +824,9 @@ input::placeholder {
 =======
 .destination {
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+.destination {
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   height: 55.56vw;
   width: 55.56vw;
   border-radius: 16px;
@@ -836,10 +849,15 @@ input::placeholder {
 
 .slider-wrapper {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   display: flex;
   justify-content: center;
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+  display: flex;
+  justify-content: center;
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   overflow-x: hidden;
 }
 
@@ -866,13 +884,19 @@ input::placeholder {
   justify-content: center;
   margin-top: 25px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   gap: 10px;
 =======
+=======
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
 }
 
 .switcher > *:not(:last-child) {
   margin-right: 10px;
+<<<<<<< HEAD
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
 }
 
 .ellipse {
@@ -880,6 +904,7 @@ input::placeholder {
   height: 20px;
   border-radius: 10px;
   background: rgba(242, 120, 92, 0.5);
+<<<<<<< HEAD
 <<<<<<< HEAD
   cursor: pointer;
   transition: 0.5s;
@@ -891,6 +916,11 @@ input::placeholder {
 
 .middle {
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+}
+
+.middle {
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   background: #F2785C;
 }
 
@@ -927,75 +957,20 @@ input::placeholder {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .arrow {
   position: absolute;
   height: 55.7vw;
   width: 18.1vw;
   background: none;
+=======
+.arrows {
+  display: none;
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
 }
 
-.arrow-left {
-  left: 0;
-  top: 170%;
-}
-
-.arrow-right {
-  right: 0;
-  top: 170%;
-}
-
-.slider-right {
-  -webkit-animation-name: move-next;
-          animation-name: move-next;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-}
-
-.slider-left {
-  -webkit-animation-name: move-prev;
-          animation-name: move-prev;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-}
-
-@-webkit-keyframes move-next {
-  from {
-    left: calc((15px + 45 * (100vw - 390px) / 1050 + 55.5555555556vw) / 2);
-  }
-  to {
-    left: calc((-15px - 45 * (100vw - 390px) / 1050 - 55.5555555556vw) / 2);
-  }
-}
-
-@keyframes move-next {
-  from {
-    left: calc((15px + 45 * (100vw - 390px) / 1050 + 55.5555555556vw) / 2);
-  }
-  to {
-    left: calc((-15px - 45 * (100vw - 390px) / 1050 - 55.5555555556vw) / 2);
-  }
-}
-@-webkit-keyframes move-prev {
-  from {
-    left: calc((-15px - 45 * (100vw - 390px) / 1050 - 55.5555555556vw) / 2);
-  }
-  to {
-    left: calc((15px + 45 * (100vw - 390px) / 1050 + 55.5555555556vw) / 2);
-  }
-}
-@keyframes move-prev {
-  from {
-    left: calc((-15px - 45 * (100vw - 390px) / 1050 - 55.5555555556vw) / 2);
-  }
-  to {
-    left: calc((15px + 45 * (100vw - 390px) / 1050 + 55.5555555556vw) / 2);
-  }
-}
 @media (max-width: 390px) {
+<<<<<<< HEAD
   @-webkit-keyframes move-next {
     from {
       left: 0;
@@ -1035,6 +1010,8 @@ input::placeholder {
 
 @media (max-width: 390px) {
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   .destinations {
     position: relative;
     margin-top: 20px;
@@ -1052,6 +1029,7 @@ input::placeholder {
     line-height: 26px;
     margin: 8px 0px 0px 15px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     bottom: 0;
     top: 0;
   }
@@ -1065,6 +1043,11 @@ input::placeholder {
   }
   .destination {
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+    bottom: unset;
+  }
+  .destination {
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
     width: 92.31vw;
     height: 53.85vw;
   }
@@ -1074,22 +1057,32 @@ input::placeholder {
   }
   .destination-slider {
 <<<<<<< HEAD
+<<<<<<< HEAD
     justify-content: flex-start;
     gap: 15px;
     margin-left: 15px;
+=======
+    position: static;
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   }
   .destination-one {
     background: url(./assets/images/Destination-1-mobile.jpg) no-repeat;
+    background-size: auto 53.85vw;
+    order: 1;
   }
   .destination-two {
     background: url(./assets/images/Destination-2-mobile.jpg) no-repeat;
+    background-size: auto 53.85vw;
+    order: 2;
   }
-  .destination-three {
+  .destination-tree {
     background: url(./assets/images/Destination-3-mobile.jpg) no-repeat;
+    background-size: auto 53.85vw;
+    order: 3;
   }
   .switcher {
-    position: relative;
     margin-top: -20px;
+<<<<<<< HEAD
     gap: 6px;
 =======
     position: static;
@@ -1115,20 +1108,31 @@ input::placeholder {
   .switcher > *:not(:last-child) {
     margin-right: 6px;
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+  }
+  .switcher > *:not(:last-child) {
+    margin-right: 6px;
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   }
   .ellipse {
     width: 8px;
     height: 8px;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   .left {
     background: #F2785C;
   }
   .middle {
     background: rgba(242, 120, 92, 0.5);
   }
+<<<<<<< HEAD
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
   .button-find {
     font-size: 11px;
     line-height: 15px;
@@ -1156,11 +1160,15 @@ input::placeholder {
   }
   .arrow-left {
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: url("/assets/icons/ep_arrow-up-bold.svg");
     transform: rotate(180deg);
 =======
     background: url("/assets/icons/ep_arrow-up-bold-left.svg");
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+    background: url("/assets/icons/ep_arrow-up-bold-left.svg");
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
     left: 4.6%;
   }
 }
@@ -1381,6 +1389,7 @@ input::placeholder {
   }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .modal {
   position: fixed;
   left: 50%;
@@ -1570,6 +1579,8 @@ input::placeholder {
 }
 =======
 >>>>>>> parent of a5b4169 (Merge branch 'travel-part3' of https://github.com/perfilovv/travel into travel-part3)
+=======
+>>>>>>> parent of a15c9ae (Merge pull request #12 from perfilovv/travel)
 html {
   scroll-behavior: smooth;
 }
